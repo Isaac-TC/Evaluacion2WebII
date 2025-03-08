@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { LoginService } from '../../services/login.service';
 import { console } from 'inspector';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-formulario-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './formulario-login.component.html',
   styleUrl: './formulario-login.component.css'
 })

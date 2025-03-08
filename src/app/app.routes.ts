@@ -4,6 +4,7 @@ import { PrivadoComponent } from './pages/privado/privado.component';
 import { LoginComponent } from './pages/login/login.component';
 import { loginGuard } from './guards/login.guard';
 import { EstudianteComponent } from './pages/estudiante/estudiante.component';
+import { AuthGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
     { path:'home', component:HomeComponent},
