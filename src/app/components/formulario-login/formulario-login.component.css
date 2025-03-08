@@ -1,0 +1,95 @@
+/* Asegurar que el formulario esté en el centro de la pantalla */
+html, body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b1b1b, #343a40); /* Fondo oscuro */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    
+    align-items: center;
+}
+
+/* Contenedor del formulario centrado */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Estilos del formulario */
+.form-container {
+    background: #222; /* Fondo oscuro para el formulario */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos del título */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f8f9fa; /* Texto claro */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos de los inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ddd; /* Texto gris claro */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #333; /* Fondo oscuro */
+    color: white;
+    border: 1px solid #555;
+    border-radius: 6px;
+    transition: border 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+.input-group input::placeholder {
+    color: #aaa; /* Color gris claro */
+}
+
+.input-group input:focus {
+    border-color: #00adb5; /* Color azul cian */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 173, 181, 0.6);
+}
+
+/* Botón de enviar */
+.btn-submit {
+    background: #00adb5; /* Azul cian llamativo */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 173, 181, 0.5);
+}
+
+.btn-submit:hover {
+    background: #008b8b; /* Azul más oscuro */
+    transform: scale(1.05);
+}

@@ -1,0 +1,40 @@
+<div class="bg-gray-900 text-white min-h-screen p-6 flex flex-col items-center">
+    <!-- Título -->
+    <h1 class="text-4xl font-bold text-center mb-6">Perfil de Docente</h1>
+
+    <!-- Información del Docente con Imagen -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center mb-6 w-full max-w-md">
+        <img class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500 shadow-lg" [src]="docente.foto" [alt]="docente.nombre">
+        <h2 class="text-2xl font-semibold">{{ docente.nombre }}</h2>
+        <p class="text-gray-400">{{ docente.departamento }}</p>
+    </div>
+
+    <!-- Tabla de Horarios -->
+    <div class="w-full max-w-4xl">
+        <table class="w-full text-left border border-gray-700">
+            <thead class="bg-gray-700">
+                <tr>
+                    <th class="p-3">Día</th>
+                    <th class="p-3">Materia</th>
+                    <th class="p-3">Horario</th>
+                    <th class="p-3">Aula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let horario of docente.horarios" class="border border-gray-700">
+                    <td class="p-3">{{ horario.dia }}</td>
+                    <td class="p-3">{{ horario.materia }}</td>
+                    <td class="p-3">{{ horario.hora }}</td>
+                    <td class="p-3">{{ horario.aula }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Botón de Cerrar Sesión -->
+    <div class="mt-8">
+        <button (click)="logut()" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg transition">
+            Cerrar Sesión
+        </button>
+    </div>
+</div>

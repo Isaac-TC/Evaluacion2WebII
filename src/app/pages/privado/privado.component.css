@@ -1,0 +1,26 @@
+h1, h2 {
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+th {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
